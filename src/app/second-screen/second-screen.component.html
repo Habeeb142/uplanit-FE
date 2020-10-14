@@ -1,0 +1,20 @@
+<div id="content">
+    <h2 class="text1">Our Test App, what do you do?</h2>
+    <h4 class="text2">Lets users understand what your business offers</h4>
+    <div id="selection" class="col-6 col-md-3" *ngFor="let item of selection">
+        <span class="text3">{{ item?.name }}</span>
+        <img src="assets/svg/cancel.svg" style="color: black;" alt="" (click)="handleCancel()">
+    </div>
+    <h4 class="err" *ngIf="selection?.length == 0">*You need to make a selection</h4>
+    
+    <div class="image-group row">
+        <div class="images col-6 col-md-3" *ngFor="let category of data; let i = index" (click)="categoryHandler(i)">
+            <img style="border-radius: 10px;" [src]="category?.image.path" alt="">
+        </div>
+    </div>
+
+    <div class="action-area">
+        <span class="action-button text-white text6" (click)="continue()">Continue</span>
+    </div>
+        
+</div>

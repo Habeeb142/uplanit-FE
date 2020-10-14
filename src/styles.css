@@ -1,0 +1,248 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+.text1, .text2 .text3, .text4, .text6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.text-white {
+    color: white;
+}
+
+.text1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #161F51;
+}
+
+.text2, .text4 {
+    font-weight: 500;
+    font-size: 1.25em;
+    color: #000000;
+}
+
+.text3 {
+    font-weight: 500;
+    font-size: 1.5625em;
+    color: #161F51; 
+    margin-top: 3.125em;
+}
+
+.text4 {
+    font-size: 1em;
+}
+
+.text5 {
+    font-size: 0.9375em;
+    color: #8E8E8E;
+    font-family: "Roboto", sans-serif;
+    margin-left: 1.01625em;
+}
+
+.text6 {
+    font-size: 2em;   
+}
+
+.text-err {
+    font-size: 18px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #E61A1A;
+}
+
+.form-area {
+    margin-top: 1.875em;
+}
+
+.form-item {
+    margin-bottom: 1.25em;
+}
+
+/* .form-item > label {
+    margin-top: .5em;
+} */
+
+.form-input {
+    background-color: #F3F3F3;
+    border: 3px solid #C3C1C5;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    outline: none;
+    margin-top: .5em;
+}
+
+input.form-input {
+    height: 63px;
+}
+
+.err-svg {
+    margin-left: 20px;
+    width: 37px;
+    height: 37px;
+    margin-top: 8px;
+}
+.err-svg2 {
+    width: 37px;
+    height: 37px;
+    margin-top: 8px;
+}
+
+textarea.form-input {
+    position: static !important;
+}
+
+.hint-text {
+    vertical-align: bottom;
+}
+
+.action-button {
+    background-color: #F00089;
+    padding: .5rem 5.3125rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.action-area {
+    margin-top: 6em;
+    text-align: right;
+}
+
+.input-err {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1105px){
+    .text1 {
+        font-size: 2.0em;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .text1 {
+        font-size: 1.5em;
+    }
+    .text2 {
+        font-size: 14px;
+    }
+    .text3 {
+        font-size: 18px;
+    }
+    .text4 {
+        font-size: 16px;
+    }
+    .text5 {
+        font-size: 12px;
+    }
+    .text-err {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 740px){
+    .text1 {
+        font-size: 1.4em;
+    }
+    .text2 {
+        font-size: 14px;
+    }
+    .text3 {
+        font-size: 18px;
+    }
+    .text4 {
+        font-size: 16px;
+    }
+    .text5, .text-err {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .text1 {
+        font-size: 28px;
+    }
+    .text2, .text4 {
+        font-size: 18px;
+    }
+    .text3 {
+        font-size: 18px;
+    }
+    .text5, .text-err {
+        font-size: 12px;
+    }
+    .action-area {
+        text-align: center;
+    }
+    .err-svg {
+        margin-left: 20px;
+        width: 34px;
+        height: 34px;
+        margin-top: 8px;
+    }
+    .err-svg2 {
+        width: 34px;
+        height: 34px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .form-input {
+        background: #F3F3F3;
+        border: 1.5px solid #C3C1C5;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 10px 15px;
+    }
+    input.form-input {
+        height: 39px;
+    }
+    .text1 {
+        font-size: 24px;
+        line-height: 28.15px;
+        margin-right: 40px;
+    }
+
+    .text2 {
+        font-size: 14px;
+    }
+    .text3 {
+        font-size: 18px;
+    }
+    .text4 {
+        font-size: 16px;
+    }
+    .text5, .text-err {
+        font-size: 12px;
+    }
+    .action-area {
+        text-align: center;
+    }
+    .action-button {
+        font-size: 24px;
+    }
+    .err-svg {
+        margin-left: 20px;
+        width: 27px;
+        height: 27px;
+        margin-top: 8px;
+    }
+    .err-svg2 {
+        width: 27px;
+        height: 27px;
+        margin-top: 8px;
+    }
+}

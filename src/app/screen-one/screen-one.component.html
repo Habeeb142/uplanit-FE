@@ -1,0 +1,47 @@
+<div id="content">
+    <h1 class="text1">Welcome Jonathan James! Let’s set you up</h1> 
+    <h6 class="text2">Let the world know about your business</h6> 
+    <h6 class="text3">Tell us about your business</h6>
+
+    <div class="form-area">
+        <div class="form-item">
+            <label for="b_name" class="text2">Business name</label>
+
+            <div class="input-err">
+                <input 
+                type="text" 
+                class="form-input text4" 
+                [(ngModel)]="details.b_name" 
+                name="b_name" 
+                (keydown)="handleKeydown(1)"
+                [style.border]="b_name_err? '3px solid #E61A1A': '' " />
+                <img class="err-svg" *ngIf="b_name_err" src="assets/svg/err.svg" alt="" srcset="">
+            </div>
+
+            <span class="text-err" *ngIf="b_name_err">*Input required for this field</span>
+        </div>
+        <div class="form-item">
+            <label for="b_desc" class="text2">Describe your business</label>
+            <span class="text5 hint">Tell us about your business</span>
+            <div class="input-err">
+                <textarea 
+                [(ngModel)]="details.b_desc" 
+                name="b_desc" 
+                [style.border]="b_desc_err? '3px solid #E61A1A': '' " 
+                name="business_desc" 
+                (keydown)="handleKeydown(2)"
+                type="text" 
+                placeholder="This can be changed at anytime" 
+                rows="10"
+                class="form-input text4"></textarea>
+                <img class="err-svg err-svg2" *ngIf="b_desc_err" src="assets/svg/err.svg" alt="" srcset="">
+            </div>
+
+            <span class="text-err" *ngIf="b_desc_err">*Input required for this field</span>
+        </div>
+        <div class="action-area">
+            <span class="action-button text-white text6" (click)="continue()">Continue</span>
+        </div>
+        
+    </div>
+</div>
