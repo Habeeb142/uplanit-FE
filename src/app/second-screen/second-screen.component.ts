@@ -8,11 +8,12 @@ import { ServerService } from "../servicse/server.service";
   styleUrls: ['./second-screen.component.css']
 })
 export class SecondScreenComponent implements OnInit {
-  public data; public selection = [];
+  public data; public selection = []; bussiness_name;
   constructor(private server: ServerService, private home: HomeScreenComponent) { }
 
   ngOnInit(): void {
-    this.getCategories();    
+    this.getCategories();
+    this.bussiness_name = this.server.data.b_name;    
   }
 
   getCategories(): void {

@@ -128,12 +128,12 @@
 
 @media screen and (max-width: 380px){
     #selection img {
-        margin: 12px 13px 0px 23px;
+        margin: 12px 13px 0px 12px;
         width: 14.14px;
         height: 14.14px;
     }
     .text3 {
-        margin: 8px 0px 10px 6px;
+        margin: 8px 0px 10px 3px;
         color: white;
         font-size: 14px;
         font-family: "Work Sans" sans-serif;
