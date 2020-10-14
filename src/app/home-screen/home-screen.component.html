@@ -1,2 +1,3 @@
-<!-- <app-screen-one></app-screen-one> -->
-<app-second-screen></app-second-screen>
+<app-screen-one *ngIf="first_screen" ></app-screen-one>
+<app-second-screen *ngIf="second_screen"></app-second-screen>
+<app-modal *ngIf="modal"></app-modal>

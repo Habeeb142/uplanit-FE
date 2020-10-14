@@ -1,0 +1,29 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTittle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="head1">
+                <h3 class="text1">One last step</h3>
+                <h4 class="text2">What events do you deliver for?</h4>
+            </div>
+            <img class="svg" src="assets/svg/cancelModal.svg" (click)="close()" alt="">
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-4 col-md-3 event d-flex" 
+                *ngFor="let event of data; let i = index"  
+                [style.background-color]="event.checkMe? '#161F51' : ''" 
+                (click)="handleEvent(event)">
+                    <span >{{ event.name }}</span> 
+                    <img  *ngIf="event.checkMe" class="mark-svg" src="assets/svg/mark.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span class="action-button text-white" (click)="handleSubmit()">Done</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-notify [notification_msg]="notification_msg"></app-notify>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeScreenComponent } from '../home-screen/home-screen.component';
 import { ServerService } from "../servicse/server.service";
 
 @Component({
@@ -8,7 +9,7 @@ import { ServerService } from "../servicse/server.service";
 })
 export class SecondScreenComponent implements OnInit {
   public data; public selection = [];
-  constructor(private server: ServerService) { }
+  constructor(private server: ServerService, private home: HomeScreenComponent) { }
 
   ngOnInit(): void {
     this.getCategories();    
@@ -27,6 +28,18 @@ export class SecondScreenComponent implements OnInit {
   handleCancel(position): void {
     this.data[this.selection[position].index] = this.selection[position];
     this.selection.splice(position, 1);  
+  }
+
+  continue(): void {
+    if(this.selection.length > 0) {
+      this.home.first_screen = false;
+      this.home.first_screen = false;
+      this.home.modal = true;
+
+      let dat = this.server.data;
+      dat.selection = this.selection;
+      this.server.submitData(dat);
+    }
   }
 
 }

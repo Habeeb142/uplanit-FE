@@ -1,9 +1,11 @@
 <div id="content">
-    <h2 class="text1">Our Test App, what do you do?</h2>
+    <h2 class="text1">Jojo Cars, what do you do?</h2>
     <h4 class="text2">Lets users understand what your business offers</h4>
-    <div id="selection" class="col-6 col-md-3" *ngFor="let item of selection">
-        <span class="text3">{{ item?.name }}</span>
-        <img src="assets/svg/cancel.svg" style="color: black;" alt="" (click)="handleCancel()">
+    <div class="row" style="margin-top: 21px;">
+        <div id="selection" class="col-5 col-md-3 m-2" *ngFor="let item of selection; let i = index">
+            <span class="text3">{{ item?.name }}</span>
+            <img src="assets/svg/cancel.svg" style="color: black;" alt="" (click)="handleCancel(i)">
+        </div>
     </div>
     <h4 class="err" *ngIf="selection?.length == 0">*You need to make a selection</h4>
     

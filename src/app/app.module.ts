@@ -9,13 +9,17 @@ import { SecondScreenComponent } from './second-screen/second-screen.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { HttpClientModule } from "@angular/common/http";
+import { ModalComponent } from './modal/modal.component';
+import { NotifyComponent } from './notify/notify.component';
 @NgModule({
   declarations: [
     AppComponent,
     ScreenOneComponent,
     SecondScreenComponent,
     HeaderComponent,
-    HomeScreenComponent
+    HomeScreenComponent,
+    ModalComponent,
+    NotifyComponent
   ],
   imports: [
     BrowserModule,

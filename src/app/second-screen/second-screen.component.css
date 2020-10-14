@@ -24,6 +24,7 @@
     color: white;
     font-size: 20px;
     font-family: "Work Sans" sans-serif;
+    white-space: nowrap;
 }
 .err {
     margin-top: 11px;
@@ -38,7 +39,7 @@
     display: inline-flex;
 }
 
-img {
+.image-group img {
     width: 100%;
 }
 
@@ -50,12 +51,15 @@ img {
 #selection {
     background-color: #F00089;
     border-radius: 25px;
-    margin-top: 21px;    
-    margin-bottom: 50px;
-    width: 182px;
     height: 47px;
     display: flex;
     justify-content: space-between;
+}
+
+#content .row:first-child {    
+    margin-top: 21px;    
+    /* margin-bottom: 10px;     */
+    width: 182px;
 }
 
 #selection img {
@@ -83,12 +87,85 @@ img {
         margin-left: 2em;
         margin-right: 2em;
     }
+    .text1 {
+        color: #000000;
+        font-size: 24px;
+        font-family: "Work Sans" sans-serif;
+        font-weight: 600;
+    }
+    .text2, .err {
+        color: #000000;
+        font-size: 14px;
+        font-family: "Work Sans" sans-serif;
+        font-weight: 500;
+    }
+    .err {
+        margin-top: 11px;
+        color: #E61A1A;
+    }
+    #selection {
+        background-color: #F00089;
+        border-radius: 22px;
+        font-size: 14px;
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .text3 {
+        margin: 8px 0px 10px 6px;
+        color: white;
+        font-size: 14px;
+        font-family: "Work Sans" sans-serif;
+        white-space: nowrap;
+    }
+    #selection img {
+        margin: 12px 13px 0px 23px;
+        width: 14.14px;
+        height: 14.14px;
+    }
+    
 }
 
 @media screen and (max-width: 380px){
+    #selection img {
+        margin: 12px 13px 0px 23px;
+        width: 14.14px;
+        height: 14.14px;
+    }
+    .text3 {
+        margin: 8px 0px 10px 6px;
+        color: white;
+        font-size: 14px;
+        font-family: "Work Sans" sans-serif;
+        white-space: nowrap;
+    }
     #content {
         margin-left: 25px;
         margin-right: 25px;
+    }
+    .text1 {
+        color: #000000;
+        font-size: 24px;
+        font-family: "Work Sans" sans-serif;
+        font-weight: 600;
+    }
+    .text2, .err {
+        color: #000000;
+        font-size: 14px;
+        font-family: "Work Sans" sans-serif;
+        font-weight: 500;
+    }
+    .err {
+        margin-top: 11px;
+        color: #E61A1A;
+    }
+    #selection {
+        background-color: #F00089;
+        border-radius: 22px;
+        font-size: 14px;
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
     }
     
 }
